@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Football</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img class="profile-icon" src="./image/Real Madrid.png" alt="RM Logo" height="150px" width="150px">
+                <span class="profile-name" id="t1-name"></span>
+                <div class="row round-runs" id="t1-round-runs">
+                    <span class="circle"></span>
+                    <span class="circle"></span>
+                    <span class="circle"></span>
+                    <span class="circle"></span>
+                    <span class="circle"></span>
+                    <span class="circle"></span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row score">
+                    <span id="t1-score"></span>
+                    <span>-</span>
+                    <span id="t2-score"></span>
+                </div>
+            </div>
+            <div class="col">
+                <img class="profile-icon" src="./image/Heusca.jpg" alt="H Logo" height="150px" width="150px">
+                <span class="profile-name" id="t2-name"></span>
+                <div class="row round-runs" id=t2-round-runs>
+                    <span class="circle"></span>
+                    <span class="circle"></span>
+                    <span class="circle"></span>
+                    <span class="circle"></span>
+                    <span class="circle"></span>
+                    <span class="circle"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <button id="button" onclick="handleStrikeButton()"></button>
+        </div>
+        <div class="row" id="result" hidden>
+        </div>
+    </div>
+    <script src="./football.js"></script>
+</body>
+</html>
